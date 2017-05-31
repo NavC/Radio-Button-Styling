@@ -1,6 +1,18 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Radio_Button_Styling._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+        <asp:Panel ID="Panel1" runat="server" Height="200px" BackColor="White" style="padding:20px;">
+
+            <asp:RadioButton ID="RadioButton1" runat="server" Text="Blue"/>
+            <br>
+            <asp:RadioButton ID="RadioButton2" runat="server" Text="Red"/>
+            <br>
+            <asp:RadioButton ID="RadioButton3" runat="server" Text="Yellow"/>
+            <br>
+            <asp:RadioButton ID="RadioButton4" runat="server" Text="Regular"/>
+        </asp:Panel>
+
+
 
     <div class="jumbotron">
         <h1>ASP.NET</h1>
