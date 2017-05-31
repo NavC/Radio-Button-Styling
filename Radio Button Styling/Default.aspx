@@ -26,8 +26,8 @@
   position: relative;
   top: 2px;
   margin: 0 5px 0 0;
-  width: 14px;
-  height: 14px;
+  width: 13px;
+  height: 13px;
   border-radius: 11px;
   border: 1px solid #d9c535;
   /*background-color: transparent;*/
@@ -36,14 +36,14 @@
 
 .radio-item input[type=radio]:checked + label:after {
   border-radius: 11px;
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   position: absolute;
-  top: 7px;
+  top: 8px;
   left: 10px;
   content: " ";
   display: block;
-  background: #949483;
+  background: #6b6a6a;
 }
 </style>
 
