@@ -17,36 +17,33 @@
 .radio-item label {
   color: #666;
   font-weight: normal;
+  left:30px;
 }
 
 .radio-item label:before {
   content: " ";
   display: inline-block;
   position: relative;
-  top: 5px;
+  top: 2px;
   margin: 0 5px 0 0;
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
   border-radius: 11px;
-  border: 2px solid #004c97;
+  border: 1px solid #d9c535;
   /*background-color: transparent;*/
-  background-color: #fefcea; /* Old browsers */   
-  background-color: -webkit-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* Chrome10-25,Safari5.1-6 */
-  background-color: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
-  background-color: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%); /* FF3.6-15 */
-  background-color: linear-gradient(to bottom, #fefcea 0%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+,*/
+  background-color: #FFFFBF;  
 }
 
 .radio-item input[type=radio]:checked + label:after {
   border-radius: 11px;
-  width: 12px;
-  height: 12px;
+  width: 6px;
+  height: 6px;
   position: absolute;
-  top: 9px;
+  top: 7px;
   left: 10px;
   content: " ";
   display: block;
-  background: #004c97;
+  background: #949483;
 }
 </style>
 
