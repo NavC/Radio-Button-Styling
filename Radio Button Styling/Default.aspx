@@ -17,7 +17,6 @@
 .radio-item label {
   color: #666;
   font-weight: normal;
-  left:30px;
 }
 
 .radio-item label:before {
@@ -25,7 +24,7 @@
   display: inline-block;
   position: relative;
   top: 2px;
-  margin: 0 5px 0 0;
+  margin: 0px 5px 0 0;
   width: 13px;
   height: 13px;
   border-radius: 11px;
@@ -35,15 +34,15 @@
 }
 
 .radio-item input[type=radio]:checked + label:after {
-  border-radius: 11px;
-  width: 5px;
-  height: 5px;
+  border-radius: 25px;
+  width: 7px;
+  height: 7px;
   position: absolute;
-  top: 8px;
-  left: 10px;
+  top: 0.50em;
+  left: 9px;
   content: " ";
   display: block;
-  background: #6b6a6a;
+  background: rgba(129, 129, 129, 0.93);
 }
 </style>
 
