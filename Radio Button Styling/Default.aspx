@@ -1,16 +1,73 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Radio_Button_Styling._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-        <asp:Panel ID="Panel1" runat="server" Height="200px" BackColor="White" style="padding:20px;">
 
-            <asp:RadioButton ID="RadioButton1" runat="server" Text="Blue"/>
-            <br>
-            <asp:RadioButton ID="RadioButton2" runat="server" Text="Red"/>
-            <br>
-            <asp:RadioButton ID="RadioButton3" runat="server" Text="Yellow"/>
-            <br>
-            <asp:RadioButton ID="RadioButton4" runat="server" Text="Regular"/>
-        </asp:Panel>
+<style>
+.radio-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 6px;
+  margin: 10px 0 0;
+}
+
+.radio-item input[type='radio'] {
+  display: none;
+}
+
+.radio-item label {
+  color: #666;
+  font-weight: normal;
+}
+
+.radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 2px solid #004c97;
+  /*background-color: transparent;*/
+  background-color: #fefcea; /* Old browsers */   
+  background-color: -webkit-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* Chrome10-25,Safari5.1-6 */
+  background-color: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
+  background-color: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%); /* FF3.6-15 */
+  background-color: linear-gradient(to bottom, #fefcea 0%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+,*/
+}
+
+.radio-item input[type=radio]:checked + label:after {
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  content: " ";
+  display: block;
+  background: #004c97;
+}
+</style>
+
+
+
+            <span class="radio-item">
+                <asp:RadioButton ID="ritema" runat="server" Text="Blue"    GroupName="radioGroup"/>
+                <br>
+            </span>
+            <span class="radio-item">
+                <asp:RadioButton ID="ritemb" runat="server" Text="Red"     GroupName ="radioGroup"/>
+                <br>
+            </span>
+            <span class="radio-item">
+                <asp:RadioButton ID="RadioButton3" runat="server" Text="Yellow"  GroupName="radioGroup"/>
+                <br>
+            </span>
+            <span class="radio-item">
+                <asp:RadioButton ID="RadioButton4" runat="server" Text="Regular" GroupName="radioGroup"/>
+
+            </span>
 
 
 
